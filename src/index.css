@@ -34,6 +34,8 @@
     --sidebar-accent-foreground: 255 255 255;
     --sidebar-border: 42 42 42;
     --sidebar-ring: 212 175 55;
+    --horror-red: 139 0 0;
+    --blood-red: 180 0 0;
   }
 }
 
@@ -83,5 +85,72 @@
 
   .gold-glow {
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+
+  .red-glow {
+    box-shadow:
+      0 0 40px rgba(139, 0, 0, 0.5),
+      0 0 80px rgba(139, 0, 0, 0.2);
+  }
+
+  .dark-shadow {
+    box-shadow:
+      0 10px 60px rgba(0, 0, 0, 0.8),
+      inset 0 0 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .flicker {
+    animation: flicker 3s infinite;
+  }
+
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    41% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.9;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+
+  .pulse-red {
+    animation: pulse-red 2s infinite;
+  }
+
+  @keyframes pulse-red {
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(139, 0, 0, 0.7);
+    }
+  }
+
+  .text-horror {
+    text-shadow:
+      0 0 10px rgba(139, 0, 0, 0.8),
+      0 0 20px rgba(139, 0, 0, 0.5);
+  }
+
+  .fog-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(139, 0, 0, 0.05) 50%,
+      rgba(10, 10, 10, 0) 100%
+    );
   }
 }
