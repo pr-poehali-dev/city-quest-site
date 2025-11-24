@@ -111,6 +111,14 @@ export default function Index() {
             Погрузитесь в реальность, где каждая деталь имеет значение
           </p>
           
+          <div className="mb-10 max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl gold-glow">
+            <img 
+              src="https://cdn.poehali.dev/projects/0a926438-b1ca-4da6-b80a-e94eddefac22/files/34ceed54-612e-4e09-923e-45ce0dfa73e2.jpg"
+              alt="Атмосферная квест-комната"
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-6 text-lg gold-glow">
               <Icon name="Calendar" className="mr-2" size={20} />
